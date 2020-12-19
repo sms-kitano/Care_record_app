@@ -80,8 +80,6 @@ class DateListActivity : AppCompatActivity() {
 
             true
         }
-        // アプリ起動時に表示テスト用のタスクを作成する
-        addConditionForTest()
 
         reloadListView()
     }
@@ -103,18 +101,5 @@ class DateListActivity : AppCompatActivity() {
         mRealm.close()
     }
 
-    private fun addConditionForTest() {
-        val condition = ConditionRecord()
-        condition.title = "様子の記録"
-        condition.memo1 = "残さず食べた"
-        condition.memo2 = "トイレに何度も起きる"
-        condition.content1 = "年末どうするか"
-        condition.content2 = "寒さに鈍感みたい"
-        condition.date = Date()
-        condition.id = 0
-        mRealm.beginTransaction()
-        mRealm.copyToRealmOrUpdate(condition)
-        mRealm.commitTransaction()
-    }
 
 }

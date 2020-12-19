@@ -67,6 +67,11 @@ class InputActivity : AppCompatActivity() {
             mYear = calendar.get(Calendar.YEAR)
             mMonth = calendar.get(Calendar.MONTH)
             mDay = calendar.get(Calendar.DAY_OF_MONTH)
+
+            val dateString = mYear.toString() + "/" + String.format("%02d", mMonth + 1) + "/" + String.format("%02d", mDay)
+
+            date_button.text = dateString
+
         } else {
             // 更新の場合
             editText.setText(mConditionRecord!!.memo1)
