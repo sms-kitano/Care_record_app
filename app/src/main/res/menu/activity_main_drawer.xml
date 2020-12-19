@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_date"
+            android:title="日付から探す"/>
+        <item
+            android:id="@+id/nav_concerned"
+            android:title="気になったこと"/>
+        <item
+            android:id="@+id/nav_well"
+            android:title="うまくいったこと"/>
+        <item
+            android:id="@+id/nav_consult"
+            android:title="相談したいこと"/>
+    </group>
+</menu>

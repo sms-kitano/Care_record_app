@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Care_record_app</string>
+    <string name="title_activity_date_list">DateListActivity</string>
+</resources>
