@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         included.button1.setOnClickListener(this)
         included.button2.setOnClickListener(this)
 
+        title = "お世話記録アプリ"
+/*
         // ナビゲーションドロワーの設定
         val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
         val toggle = ActionBarDrawerToggle(this, drawer, mToolbar, R.string.app_name, R.string.app_name)
@@ -36,13 +38,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val navigationView = findViewById<NavigationView>(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
+
+ */
     }
 
     override fun onClick(v: View?) {
         var intent: Intent? = null
         when(v!!.id){
             R.id.button1 -> intent = Intent(this, InputActivity::class.java)
-            R.id.button2 -> intent = Intent(this, InputCareActivity::class.java)
+            R.id.button2 -> intent = Intent(this, DateListActivity::class.java)
 
         }
 

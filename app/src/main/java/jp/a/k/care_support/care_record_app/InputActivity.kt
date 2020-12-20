@@ -3,7 +3,9 @@ package jp.a.k.care_support.care_record_app
 import android.app.DatePickerDialog
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.support.v7.widget.Toolbar
+import android.util.Log
 import android.view.View
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -30,8 +32,12 @@ class InputActivity : AppCompatActivity() {
         datePickerDialog.show()
     }
 
-    private val mOnDoneClickListener = View.OnClickListener {
+    private val mOnDoneClickListener = View.OnClickListener { view ->
         addTask()
+/*
+        Snackbar.make(view, "保存しました", Snackbar.LENGTH_LONG)
+            .show()
+*/
         finish()
     }
 
@@ -39,7 +45,7 @@ class InputActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_input)
 
-        title = "様子の記録"
+        title = "記録をする"
 
         // ActionBarを設定する TODO:nullじゃないか確認
         if (findViewById<View>(R.id.toolbar) != null) {
@@ -122,7 +128,7 @@ class InputActivity : AppCompatActivity() {
         val memo2 = editText2.text.toString()
         val content1 = editText3.text.toString()
         val content2 = editText4.text.toString()
-        //TODO:選択されているラジオボタンのIDをRealmに保存したい
+        //選択されているラジオボタンのIDをRealmに保存
         val radio1 = findViewById<RadioGroup>(R.id.radio1)
         val radio2 = findViewById<RadioGroup>(R.id.radio2)
         val id1 = radio1.checkedRadioButtonId.toInt()

@@ -33,7 +33,7 @@ class DateListActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        title = "日付から探す"
+        title = "記録を見る"
 
         // Realmの設定
         mRealm = Realm.getDefaultInstance()

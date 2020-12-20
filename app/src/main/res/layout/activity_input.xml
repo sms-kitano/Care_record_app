@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="食事量"
+            android:text="食事について"
             android:id="@+id/textView"/>
 
         <RadioGroup
@@ -31,19 +31,19 @@
             android:id="@+id/radio1">
 
             <RadioButton
-                android:text="多い"
+                android:text="たくさん食べた"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radio1_1"/>
 
             <RadioButton
-                android:text="普通"
+                android:text="普段と同じくらい食べた"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radio1_2"/>
 
             <RadioButton
-                android:text="少ない"
+                android:text="あまり食べなかった"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radio1_3"/>
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:layout_marginTop="20dp"
-            android:text="睡眠"
+            android:text="睡眠について"
             android:id="@+id/textView2"/>
 
         <RadioGroup

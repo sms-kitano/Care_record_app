@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
         android:layout_margin="16dp"
-        android:text="様子の記録"
+        android:text="記録をする"
         android:background="@color/colorBase"
         android:id="@+id/button1"/>
 
@@ -27,7 +27,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/button1"
         android:layout_margin="16dp"
-        android:text="ケアの記録"
+        android:text="記録を見る"
         android:background="@color/colorBase"
         android:id="@+id/button2"/>
 

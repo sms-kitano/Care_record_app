@@ -24,11 +24,11 @@ class ConditionAdapter(context: Context): BaseAdapter() {
         val textView2 = view.findViewById<TextView>(android.R.id.text2)
 
         // 情報を取得
-        textView1.text = conditionList[position].title
-
         val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.JAPANESE)
         val date = conditionList[position].date
-        textView2.text = simpleDateFormat.format(date)
+        textView1.text = simpleDateFormat.format(date)
+
+        textView2.text = conditionList[position].content2
 
         return view
     }
